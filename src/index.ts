@@ -1,8 +1,10 @@
 import {BoxGeometry, BufferGeometry, Material, Mesh, MeshStandardMaterial} from "three"
-import {RigidBodyDesc} from "@dimforge/rapier3d";
+import rapier, {RigidBodyDesc} from "@dimforge/rapier3d-compat";
 import {setupScene} from "./setupScene";
 
-const rapier = await import("@dimforge/rapier3d")
+
+
+await rapier.init()
 const world = new rapier.World(new rapier.Vector3(0.0, -9.81, 0.0))
 const friction = Number(new URLSearchParams(document.location.search).get("friction") ?? "0.1")
 
