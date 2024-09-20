@@ -1,13 +1,42 @@
 <head>
     <script src="src/index.ts" type="module"></script>
     <style>
-        html, body, canvas  {
+        html, body, canvas {
             padding: 0;
             margin: 0;
             width: 100%;
-            height: 100%
+            height: 100%;
+            background: black;
         }
+
+        div {
+            padding: 0.5rem;
+            position: absolute;
+            z-index: 10;
+        }
+        p {
+            color: white;
+        }
+        a {
+            color: lightgray;
+            text-underline-offset: 1px;
+        }
+
     </style>
 </head>
 <body>
+<div>
+    <p>
+        The <span style="color: red;">red</span> cube uses a trimesh collider.
+    </p>
+    <p>
+        The <span style="color: green;">green</span> cube uses a convexHull collider.
+    </p>
+    <p>
+        The ground plane cube uses a trimesh collider.
+    </p>
+    <p>
+        <a href="https://github.com/nknapp/rapier-three-trimesh-bug/blob/main/src/index.ts">Source code</a>
+    </p>
+</div>
 </body>
