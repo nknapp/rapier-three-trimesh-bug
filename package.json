@@ -1,0 +1,22 @@
+{
+  "name": "rapier-three-trimesh-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/three": "^0.168.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.7",
+    "vite-plugin-wasm": "^3.3.0"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d": "^0.14.0",
+    "three": "^0.168.0"
+  }
+}

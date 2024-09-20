@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",                                /* Specify what module code is generated. */
+    "moduleResolution": "bundler",
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  }
+}
